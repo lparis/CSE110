@@ -1,0 +1,53 @@
+package customerPackage;
+
+public class Customer {
+	
+	private static int custId;
+	private static String custName;
+	private static String custStatus;
+	// Privileged, Normal, Restricted
+	
+	// Custom default constructor
+	Customer(int id, String name, String status)
+	{
+		custId = id;
+		custName = name;
+		custStatus = "normal";
+	}
+	
+	// Set custId
+	public static void setCustId(int id)
+	{
+		custId = id;
+	}
+	
+	// Get custId
+	public int getCustId()
+	{
+		return custId;
+	}
+
+	// Set custId
+	public static void setCustName(String name)
+	{
+		custName = name;
+	}
+
+	// Get custId
+	public String getCustName()
+	{
+		return custName;
+	}
+
+	// Set customer status
+	public static void setCustStatus(String status)
+	{
+		custStatus = status;
+	}
+
+	// Get customer status
+	public String getCustStatus()
+	{
+		return custStatus;
+	}
+}
